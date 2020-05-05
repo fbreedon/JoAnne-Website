@@ -1,0 +1,114 @@
+/* =CSS DIRECTORY=
+		. =GLOBAL=
+		. =HEADER=
+		. =GENERAL=
+		. =GALLERY=
+		. =ANIMATIONS=
+		.
+*/
+
+/* =COLORS=
+
+*/
+
+/* -^-^-^-^- =GLOBAL= -^-^-^-^- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial";
+  margin: 0;
+}
+
+p {
+
+}
+
+/* -v-v-v-v- =GLOBAL= -v-v-v-v- */
+
+/* -^-^-^-^- =HEADER= -^-^-^-^- */
+
+.header {
+
+}
+
+.title {
+
+}
+
+.navigation {
+
+}
+
+.navigation a {
+
+}
+
+/* -v-v-v-v- =HEADER= -v-v-v-v- */
+
+/* -^-^-^-^- =GENERAL= -^-^-^-^- */
+
+.content {
+
+}
+
+/* -v-v-v-v- =GENERAL= -v-v-v-v- */
+
+/* -^-^-^-^- =SLIDESHOW= -^-^-^-^- */
+
+.slideshow {
+
+}
+
+.slideshow-img {
+
+}
+
+/* -v-v-v-v- =SLIDESHOW= -v-v-v-v- */
+
+/* -^-^-^-^- =GALLERY= -^-^-^-^- */
+
+.gallery-grid {
+
+}
+
+.gallery {
+
+}
+
+.gallery-img {
+
+}
+
+.gallery-img-grid {
+
+}
+
+/* -v-v-v-v- =GALLERY= -v-v-v-v- */
+
+/* -^-^-^-^- =ANIMATIONS= -^-^-^-^- */
+
+.fade-in {
+	animation: fade-in .2s ease-in forwards;
+	-webkit-animation: fade-in .2s ease-in forwards;
+}
+
+@keyframes fade-in {
+	from {opacity: 0}
+	to {opacity: 1.0}
+}
+
+.fade-out {
+	animation: fade-out .2s ease-out forwards;
+	-webkit-animation: fade-out .2s ease-out forwards;
+}
+
+@keyframes fade-out {
+	from {opacity: 1.0}
+	to {opacity: 0}
+}
+
+/* -v-v-v-v- =ANIMATIONS= -v-v-v-v- */
+
