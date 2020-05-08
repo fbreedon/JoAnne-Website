@@ -22,6 +22,8 @@
 
   <body>
 
+    <!-- Website wrapper -->
+    <div class="canvas">
     <!-- Homepage header -->
     <header class="header">
       <!-- Header title -->
@@ -62,11 +64,11 @@
 
     <!-- Footer for copyright and social media info -->
     <footer class="footer">
-      <div class="footer-left">
-        <p>&copy JoAnne Fillatti</p>
-      </div>
+      <p>&copy JoAnne Fillatti</p>
     </footer>
 
+    </div>
+    
   </body>
 
 </html>

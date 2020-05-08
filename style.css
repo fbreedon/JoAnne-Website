@@ -26,35 +26,66 @@ p {
 
 }
 
+footer {
+	position: absolute;
+	bottom: 0;
+	padding-left: 32px;
+}
+
 /* -v-v-v-v- =GLOBAL= -v-v-v-v- */
+
+/* -^-^-^-^- =GENERAL= -^-^-^-^- */
+
+.canvas {
+	display: block;
+	/*position: absolute;*/
+	margin: auto;
+	width: 100%;
+	min-height: 100vh;
+	overflow: auto;
+}
+
+.content {
+	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+	padding-top: 32px;
+}
+
+/* -v-v-v-v- =GENERAL= -v-v-v-v- */
 
 /* -^-^-^-^- =HEADER= -^-^-^-^- */
 
 .header {
-
+	margin: auto;
+	padding: 32px;
 }
 
 .title {
-
+	float: left;
+	font-size: 1.6em;
+	letter-spacing: 2px;
+	text-decoration: none;
 }
 
 .navigation {
-
+	margin: auto;
+	float: right;
+	max-width: 100%;
 }
 
 .navigation a {
+	color: #1a1a1a;
+	text-decoration: none;
+	text-align: center;
+	padding: 0 8px;
+}
 
+.navigation a.active {
+	color: #808080;
 }
 
 /* -v-v-v-v- =HEADER= -v-v-v-v- */
-
-/* -^-^-^-^- =GENERAL= -^-^-^-^- */
-
-.content {
-
-}
-
-/* -v-v-v-v- =GENERAL= -v-v-v-v- */
 
 /* -^-^-^-^- =SLIDESHOW= -^-^-^-^- */
 
