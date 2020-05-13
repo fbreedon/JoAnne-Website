@@ -46,15 +46,15 @@
       <div class="slideshow">
         <!-- Slideshow images -->
         <!-- Php to read the image files and display them in the slideshow -->
-          <?php
-          // Find all the image file paths in the directory and store them in an array,
-          // then display each one properly in the slideshow
-          foreach (glob("images/slideshow/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
-          ?>
-            <img class="slide-img" src="<?php echo $img_file; ?>" />
-          <?php
-          }
-          ?>
+        <?php
+        // Find all the image file paths in the directory and store them in an array,
+        // then display each one properly in the slideshow
+        foreach (glob("images/slideshow/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
+        ?>
+          <img class="slide-img" src="<?php echo $img_file; ?>" />
+        <?php
+        }
+        ?>
       </div>
     </div>
 
