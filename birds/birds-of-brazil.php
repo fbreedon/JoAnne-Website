@@ -37,6 +37,8 @@
         <a href="./landscapes/">Landscapes</a>
         <a href="./abstracts/">Abstracts</a>
         <a href="./other/">Other</a>
+        <a href="./about/">About</a>
+        <a href="./contact/">Contact</a>
       </nav>
     </header>
 
