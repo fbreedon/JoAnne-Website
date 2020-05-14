@@ -4,7 +4,7 @@
   <head>
   	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <base href="http://localhost/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   	<meta name="description" content="">
@@ -32,11 +32,7 @@
       <!-- Header navigation container -->
       <nav class="navigation" id="navigation-id">
         <!-- Navigation links -->
-        <a href="./birds/">Birds</a>
-        <a href="./wildlife/">Wildlife</a>
-        <a href="./landscapes/">Landscapes</a>
-        <a href="./abstracts/">Abstracts</a>
-        <a href="./other/">Other</a>
+        <a href="./galleries/">Galleries</a>
         <a href="./about/">About</a>
         <a href="./contact/">Contact</a>
       </nav>

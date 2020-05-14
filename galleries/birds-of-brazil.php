@@ -4,7 +4,7 @@
   <head>
   	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <base href="http://localhost/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   	<meta name="description" content="">
@@ -18,7 +18,7 @@
   	<meta property="og:url" content="">
   	<meta property="og:title" content="">
   	<meta property="og:description" content="">
-  	<title>Birds | Joanne Fillatti</title>
+  	<title>Birds of Brazil | Joanne Fillatti</title>
   </head>
 
   <body>
@@ -32,11 +32,7 @@
       <!-- Header navigation container -->
       <nav class="navigation" id="navigation-id">
         <!-- Navigation links -->
-        <a href="./birds/" class="active">Birds</a>
-        <a href="./wildlife/">Wildlife</a>
-        <a href="./landscapes/">Landscapes</a>
-        <a href="./abstracts/">Abstracts</a>
-        <a href="./other/">Other</a>
+        <a href="./galleries/" class="active">Galleries</a>
         <a href="./about/">About</a>
         <a href="./contact/">Contact</a>
       </nav>
@@ -44,28 +40,21 @@
 
     <!-- Content container for centering -->
     <div class="content">
-      <!-- Category gallery container flexbox-->
-      <div class="categories">
-        <a href="./birds/birds-of-brazil.php">
-          <img src="./images/birds/brazil/Barred Antshrike.jpg">
-          <p>Brazil</p>
-        </a>
-        <a href="./birds/birds-of-british-columbia.php">
-          <img src="./images/birds/british columbia/Northern Pintail-1.jpg">
-          <p>British Columbia</p>
-        </a>
-        <a href="./birds/birds-of-colombia.php">
-          <img src="./images/birds/colombia/Red-crowned Woodpecker.jpg">
-          <p>Colombia</p>
-        </a>
-        <a href="./birds/birds-of-ecuador.php">
-          <img src="./images/birds/ecuador/White-necked Jacobin-2.jpg">
-          <p>Equador</p>
-        </a>
-        <a href="./birds/birds-of-iceland.php">
-          <img src="./images/birds/iceland/Atlantic Puffin-3.jpg">
-          <p>Iceland</p>
-        </a>
+      <!-- Gallery title -->
+      <h3>Birds of Brazil</h3>
+      <!-- Image gallery container grid -->
+      <div class="gallery">
+        <!-- Gallery images -->
+        <!-- Php to read the image files and display them in the gallery -->
+        <?php
+        // Find all the image file paths in the directory and store them in an array,
+        // then display each one properly in the gallery
+        foreach (glob("../images/birds/brazil/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
+        ?>
+          <img class="gallery-img" src="<?php echo $img_file; ?>" />
+        <?php
+        }
+        ?>
       </div>
     </div>
 
