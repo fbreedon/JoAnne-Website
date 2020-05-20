@@ -1,12 +1,23 @@
 // Function to open the modal when clicking an image
-function openModal() {
+// Saves the scroll value of the page and makes it so you can't scroll
+const openModal = () => {
 	document.getElementById('modal-id').style.display = "block";
-}
+	const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+	const body = document.body;
+	body.style.position = 'fixed';
+	body.style.top = `-${scrollY}`;
+};
 
 // Function to close the modal when clicking the close button
-function closeModal() {
+// Scrolls the page back to the original scroll value when the modal opened
+const closeModal = () => {
+	const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
 	document.getElementById('modal-id').style.display = "none";
-}
+};
 
 // Set the index for the images and call the show function
 var modalIndex = 1;
@@ -52,3 +63,8 @@ function showModal(n) {
 	// Check that there is info, and set the current image's info display value to "block"
 	//if(captionText.length > 0) {captionText[modalIndex-1].style.display = "block";}
 }
+
+// Keeps track of the page's scroll value
+window.addEventListener('scroll', () => {
+	document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});

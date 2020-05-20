@@ -62,9 +62,7 @@
     <!-- Call the mobile navigation icon script -->
 
     <!-- Footer for copyright and social media info -->
-    <footer class="footer">
-      <p>&copy JoAnne Fillatti</p>
-    </footer>
+    <footer class="footer">&copy JoAnne Fillatti</footer>
 
     </div>
 

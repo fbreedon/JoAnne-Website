@@ -63,8 +63,8 @@
         <!-- X button to close the modal -->
         <span class="close" onclick="closeModal()">&times;</span>
         <!-- Modal navigation by clicking to the right or left of images -->
-        <a class="prev-img" onclick="plusModal(-1)">&#10094;</a>
-        <a class="next-img" onclick="plusModal(1)">&#10095;</a>
+        <a class="prev-img" onclick="plusModal(-1)"><div>&#65124;</div></a>
+        <a class="next-img" onclick="plusModal(1)"><div>&#65125;</div></a>
         <!-- Image gallery in the modal -->
         <div class="modal-content">
           <!-- Modal gallery images -->
@@ -88,9 +88,7 @@
     <script src="./scripts/modal script.js"></script>
 
     <!-- Footer for copyright and social media info -->
-    <footer class="footer">
-      <p>&copy JoAnne Fillatti</p>
-    </footer>
+    <footer class="footer">&copy JoAnne Fillatti</footer>
 
     </div>
     
