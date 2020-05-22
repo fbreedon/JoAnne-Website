@@ -68,3 +68,8 @@ function showModal(n) {
 window.addEventListener('scroll', () => {
 	document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
+
+// Close the modal when the escape key is pressed
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode == 27) { closeModal(); }
+});
