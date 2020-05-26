@@ -80,38 +80,54 @@ h3 {
 .header {
 	text-transform: uppercase;
 	margin: auto;
-	padding: 48px;
+	padding: 48px 48px 32px 48px;
+}
+
+.navigation {
+	/*margin: auto;
+	float: right;
+	font-size: 1.1em;
+	max-width: 100%;*/
+	display: grid;
+	grid-template-columns: 1fr repeat(3, fit-content(50px));
+	grid-gap: 12px;
+	justify-content: center;
+	align-items: end;
+}
+
+.navigation div {
+	grid-column: 1 / 2;
+	vertical-align: center;
 }
 
 .title {
-	float: left;
 	font-size: 1.8em;
 	letter-spacing: 2px;
 	text-decoration: none;
 	color: #1a1a1a;
 }
 
-.navigation {
-	margin: auto;
-	float: right;
-	font-size: 1.1em;
-	max-width: 100%;
-}
-
-.navigation a {
+.navigation a:not(.title) {
 	text-decoration: none;
 	text-align: center;
-	vertical-align: bottom;
+	vertical-align: center;
+	font-size: 1.1em;
 	color: #1a1a1a;
-	margin: 0 6px;
+	/*margin: 0 6px;*/
 }
 
 .navigation a.active {
 	color: #999999;
 }
 
-.navigation a:hover:not(.active) {
+.navigation a:hover:not(.active):not(.title) {
 	color: #bfbfbf;
+}
+
+@media screen and (max-width: 900px) {
+	.navigation {
+		/*grid-template-columns: 1fr 50px;*/
+	}
 }
 
 /* -v-v-v-v- =HEADER= -v-v-v-v- */
@@ -133,7 +149,7 @@ h3 {
 .categories {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-end;
 	padding: 16px 32px;
 }
 

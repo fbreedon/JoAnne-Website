@@ -27,10 +27,10 @@
     <div class="canvas">
     <!-- Homepage header -->
     <header class="header">
-      <!-- Header title -->
-      <a href="./" class="title">JoAnne Fillatti Photography</a>
       <!-- Header navigation container -->
       <nav class="navigation" id="navigation-id">
+        <!-- Header title -->
+        <div><a href="./" class="title">JoAnne Fillatti Photography</a></div>
         <!-- Navigation links -->
         <a href="./galleries/" class="active">Galleries</a>
         <a href="./about/">About</a>
