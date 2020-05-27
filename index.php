@@ -31,6 +31,8 @@
       <nav class="navigation" id="navigation-id">
         <!-- Header title -->
         <div><a href="./" class="title">JoAnne Fillatti Photography</a></div>
+        <!-- Responsive icon for mobile -->
+        <a href="javascript:void(0);" class="nav-icon" onclick="clickIcon()">&#9776</a>
         <!-- Navigation links -->
         <a href="./galleries/">Galleries</a>
         <a href="./about/">About</a>
@@ -56,10 +58,11 @@
       </div>
     </div>
 
+    <!-- Call the mobile navigation icon script -->
+    <script src="scripts/navigation icon script.js"></script>
+
     <!-- Call the slideshow script -->
     <script type="./scripts/slideshow script.js"></script>
-
-    <!-- Call the mobile navigation icon script -->
 
     <!-- Footer for copyright and social media info -->
     <footer class="footer">&copy JoAnne Fillatti</footer>

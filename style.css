@@ -1,13 +1,17 @@
 /* =CSS DIRECTORY=
 		. =GLOBAL=
-		. =HEADER=
 		. =GENERAL=
+		. =HEADER=
+		. =SLIDESHOW=
+		. =CATEGORIES=
 		. =GALLERY=
 		. =GALLERY MODAL=
-		. =CATEGORIES=
-		. =SLIDESHOW=
 		. =ANIMATIONS=
 		. =MOBILE=
+		. =ICON CLOSED=
+		. =ICON OPEN=
+		. =MOBILE CATEGORIES=
+		. =MOBILE GALLERY=
 */
 
 /* =COLORS=
@@ -100,6 +104,10 @@ h3 {
 	vertical-align: center;
 }
 
+.navigation a {
+	color: #1a1a1a;
+}
+
 .title {
 	font-size: 1.8em;
 	letter-spacing: 2px;
@@ -107,12 +115,22 @@ h3 {
 	color: #1a1a1a;
 }
 
-.navigation a:not(.title) {
+.nav-icon {
+	display: none;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 1.6em;
+	color: #808080;
+	padding: 22px 24px 16px 0;
+}
+
+.navigation a:not(.title):not(.nav-icon) {
 	text-decoration: none;
 	text-align: center;
 	vertical-align: center;
 	font-size: 1.1em;
-	color: #1a1a1a;
 	/*margin: 0 6px;*/
 }
 
@@ -167,6 +185,10 @@ h3 {
 
 .categories p {
 	text-align: center;
+}
+
+.categories a:hover p {
+	color: #bfbfbf;
 }
 
 @media screen and (min-width: 600px) {
@@ -282,7 +304,8 @@ h3 {
 	position: absolute;
 	top: 50%;
 	padding: 0 16px;
-	margin-top: -50px;
+	margin-top: -32px;
+	transition: 0.4s ease;
 	font-size: 3rem;
 	user-select: none;
 	-webkit-user-select: none;
@@ -325,6 +348,71 @@ h3 {
 
 /* -^-^-^-^- =MOBILE= -^-^-^-^- */
 
+@media screen and (max-width: 900px) {
 
+	/* -^-^-^-^- =ICON CLOSED= -^-^-^-^- */
+
+	.header {
+		padding: 24px 16px;
+	}
+
+	.navigation {
+		display: block;
+	}
+
+	.navigation div {
+		padding-bottom: 16px;
+	}
+
+	.title {
+		font-size: 1.6em;
+		padding-right: 32px;
+	}
+
+	.nav-icon {
+		display: block;
+	}
+
+	.navigation a:not(.title):not(.nav-icon) {
+		display: none;
+		text-align: center;
+	}
+
+	/* -v-v-v-v- =ICON CLOSED= -v-v-v-v- */
+
+	/* -^-^-^-^- =ICON OPEN= -^-^-^-^- */
+
+	.responsive a:not(.title):not(.nav-icon) {
+		display: block;
+		margin-top: 20px;
+	}
+
+	/* -v-v-v-v- =ICON OPEN= -v-v-v-v- */
+
+	/* -^-^-^-^- =MOBILE GENERAL= -^-^-^-^- */
+
+	.canvas {
+		padding: 0 16px;
+	}
+
+	/* -v-v-v-v- =MOBILE GENERAL= -v-v-v-v- */
+
+	/* -^-^-^-^- =MOBILE CATEGORIES= -^-^-^-^- */
+
+	.categories {
+		padding: 0;
+	}
+
+	/* -v-v-v-v- =MOBILE CATEGORIES= -v-v-v-v- */
+
+	/* -^-^-^-^- =MOBILE GALLERY= -^-^-^-^- */
+
+	.gallery {
+		padding: 32px 8px;
+	}
+
+	/* -v-v-v-v- =MOBILE GALLERY= -v-v-v-v- */
+
+}
 
 /* -v-v-v-v- =MOBILE= -v-v-v-v- */

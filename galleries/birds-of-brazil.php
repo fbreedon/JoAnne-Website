@@ -31,6 +31,8 @@
       <nav class="navigation" id="navigation-id">
         <!-- Header title -->
         <div><a href="./" class="title">JoAnne Fillatti Photography</a></div>
+        <!-- Responsive icon for mobile -->
+        <a href="javascript:void(0);" class="nav-icon" onclick="clickIcon()">&#9776</a>
         <!-- Navigation links -->
         <a href="./galleries/" class="active">Galleries</a>
         <a href="./about/">About</a>
@@ -83,6 +85,7 @@
     </div>
 
     <!-- Call the mobile navigation icon script -->
+    <script src="scripts/navigation icon script.js"></script>
 
     <!-- Call the modal gallery script -->
     <script src="./scripts/modal script.js"></script>
