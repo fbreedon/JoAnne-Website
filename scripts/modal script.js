@@ -46,9 +46,10 @@ function showModal(n) {
 	if (n > images.length) {modalIndex = 1;}
 	if (n < 1) {modalIndex = images.length;}
 
-	// Set the display value for each image to "none"
+	// Set the opacity for each image to 0
 	for (i = 0; i < images.length; i++) {
-		images[i].style.display = "none";
+		//images[i].style.display = "none";
+		images[i].style.opacity = "0";
 	}
 
 	// Check that there is info, and set the display value for each info to "none"
@@ -58,8 +59,9 @@ function showModal(n) {
 		}
 	}*/
 
-	// Set the current image's display value to "block"
-	images[modalIndex-1].style.display = "block";
+	// Set the current image's opacity to 1
+	//images[modalIndex-1].style.display = "block";
+	images[modalIndex-1].style.opacity = 1;
 	// Check that there is info, and set the current image's info display value to "block"
 	//if(captionText.length > 0) {captionText[modalIndex-1].style.display = "block";}
 }
