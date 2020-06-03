@@ -62,7 +62,7 @@
     <script src="scripts/navigation icon script.js"></script>
 
     <!-- Call the slideshow script -->
-    <script type="./scripts/slideshow script.js"></script>
+    <script src="scripts/slideshow script.js"></script>
 
     <!-- Footer for copyright and social media info -->
     <footer class="footer">&copy JoAnne Fillatti</footer>
