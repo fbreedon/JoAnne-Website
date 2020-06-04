@@ -394,6 +394,7 @@ h3 {
 
 	.navigation {
 		display: block;
+		text-align: center;
 	}
 
 	.navigation div {
@@ -401,8 +402,7 @@ h3 {
 	}
 
 	.title {
-		font-size: 1.6em;
-		padding-right: 32px;
+		font-size: 1.5em;
 	}
 
 	.nav-icon {
@@ -411,16 +411,21 @@ h3 {
 
 	.navigation a:not(.title):not(.nav-icon) {
 		display: none;
-		text-align: center;
+		font-size: 1.3em;
 	}
 
 	/* -v-v-v-v- =ICON CLOSED= -v-v-v-v- */
 
 	/* -^-^-^-^- =ICON OPEN= -^-^-^-^- */
 
+	.responsive div {
+		border-bottom: thin solid;
+	}
+
 	.responsive a:not(.title):not(.nav-icon) {
-		display: block;
-		margin-top: 20px;
+		display: /*inline-*/block;
+		padding-top: 24px;
+		margin: 0 16px;
 	}
 
 	/* -v-v-v-v- =ICON OPEN= -v-v-v-v- */
