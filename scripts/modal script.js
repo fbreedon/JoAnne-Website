@@ -40,7 +40,7 @@ function currentModal(n) {
 function showModal(n) {
 	var i;
 	var images = document.getElementsByClassName("modal-img");
-	// var captionText = document.getElementsByClassName("info");
+	var captionText = document.getElementsByClassName("caption");
 
 	// Loop back to the first or last image when at either end of the modal
 	if (n > images.length) {modalIndex = 1;}
@@ -52,18 +52,18 @@ function showModal(n) {
 		images[i].style.opacity = "0";
 	}
 
-	// Check that there is info, and set the display value for each info to "none"
-	/*if(captionText.length > 0) {
+	// Check that there are captions, and hide them
+	if(captionText.length > 0) {
 		for (i = 0; i < captionText.length; i++) {
 			captionText[i].style.display = "none";
 		}
-	}*/
+	}
 
 	// Set the current image's opacity to 1
 	//images[modalIndex-1].style.display = "block";
 	images[modalIndex-1].style.opacity = 1;
-	// Check that there is info, and set the current image's info display value to "block"
-	//if(captionText.length > 0) {captionText[modalIndex-1].style.display = "block";}
+	// Check that there are captions, and display the current image's caption
+	if(captionText.length > 0) {captionText[modalIndex-1].style.display = "block";}
 }
 
 // Keeps track of the page's scroll value

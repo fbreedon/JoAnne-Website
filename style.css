@@ -321,6 +321,23 @@ h3 {
   transition: opacity .2s ease-in;
 }
 
+.caption {
+	position: absolute;
+	bottom: 0;
+	/*background: #000000;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	transition: .3s ease-out;
+	opacity: 0;*/
+	width: 100%;
+	font-size: 1em;
+	text-align: center;
+}
+
+.modal-img:hover .caption {
+	opacity: 1;
+}
+
 .prev-img,
 .next-img {
 	position: absolute;
@@ -423,7 +440,7 @@ h3 {
 	}
 
 	.responsive a:not(.title):not(.nav-icon) {
-		display: /*inline-*/block;
+		display: inline-block;
 		padding-top: 24px;
 		margin: 0 16px;
 	}
@@ -482,6 +499,12 @@ h3 {
 @media screen and (max-width: 588px) {
 	.gallery {
 		grid-auto-rows: 300px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.responsive a:not(.title):not(.nav-icon) {
+		display: block;
 	}
 }
 
