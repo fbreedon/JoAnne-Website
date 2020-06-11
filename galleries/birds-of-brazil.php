@@ -70,34 +70,37 @@
         <!-- Image gallery in the modal -->
         <div class="modal-content">
           <!-- Modal gallery images -->
-          <div class="test" style="display: inline-block;">
+          <!--div class="test" style="display: inline-block;"-->
           <!-- Php to read the image files and display them in the modal gallery -->
           <?php
           // Find all the image file paths in the directory and store them in an array,
           // then display each one properly in the modal gallery
           foreach (glob("../images/birds/brazil/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
           ?>
+          <div class="modal-container">
             <img class="modal-img" src="<?php echo $img_file; ?>" />
-          <?php
-          }
-
-          // Find all the text file paths in the directory and store them in an array
-          foreach (glob("../images/birds/brazil/captions/*.txt") as $info_file) {
-            // Open and read the current file in the array
+            <?php
+            $file_name = pathinfo($img_file); //basename($img_file,".jpg");
+            $info_file = "../images/birds/brazil/captions/" . $file_name['filename'] . ".txt";
             $file_handle = fopen($info_file, "r");
-          ?>
+            ?>
             <div class="caption">
               <?php
               // Read the file line by line and put them all in one div
-              while (!feof($file_handle)) { echo fgets($file_handle); ?> <br> <?php }
-              ?>
+              while (!feof($file_handle)) {
+                echo $text = fgets($file_handle); ?> <br> <?php
+              } ?>
             </div>
             <?php
             // Close the opened file
             fclose($file_handle);
+            ?>
+            </div>
+          <?php
           }
           ?>
-        </div>
+
+        <!--/div-->
         </div>
       </div>
     </div>

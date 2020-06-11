@@ -41,6 +41,9 @@ function showModal(n) {
 	var i;
 	var images = document.getElementsByClassName("modal-img");
 	var captionText = document.getElementsByClassName("caption");
+	//var imageContainer = document.getElementsByClassName("test");
+
+	calcHeight();
 
 	// Loop back to the first or last image when at either end of the modal
 	if (n > images.length) {modalIndex = 1;}
@@ -58,12 +61,24 @@ function showModal(n) {
 			captionText[i].style.display = "none";
 		}
 	}
-
+	
+	//imageContainer[modalIndex-1].style.width = parseInt(window.getComputedStyle(images[modalIndex-1]).width) + "px";
+	//imageContainer[modalIndex-1].style.height = parseInt(window.getComputedStyle(images[modalIndex-1]).height) + "px";
 	// Set the current image's opacity to 1
 	//images[modalIndex-1].style.display = "block";
 	images[modalIndex-1].style.opacity = 1;
 	// Check that there are captions, and display the current image's caption
 	if(captionText.length > 0) {captionText[modalIndex-1].style.display = "block";}
+}
+
+function calcHeight() {
+	var i;
+	var images = document.getElementsByClassName("modal-img");
+	var imageContainer = document.getElementsByClassName("modal-container");
+
+	for (i = 0; i < images.length; i++) {
+		imageContainer[i].style.height = parseInt(window.getComputedStyle(images[i]).height) + "px";
+	}
 }
 
 // Keeps track of the page's scroll value
