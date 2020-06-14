@@ -79,10 +79,6 @@ h3 {
 }
 
 .navigation {
-	/*margin: auto;
-	float: right;
-	font-size: 1.1em;
-	max-width: 100%;*/
 	display: grid;
 	grid-template-columns: 1fr repeat(3, fit-content(50px));
 	grid-gap: 12px;
@@ -122,7 +118,6 @@ h3 {
 	text-align: center;
 	vertical-align: center;
 	font-size: 1.1em;
-	/*margin: 0 6px;*/
 }
 
 .navigation a.active {
@@ -159,52 +154,6 @@ h3 {
 /* -v-v-v-v- =SLIDESHOW= -v-v-v-v- */
 
 /* -^-^-^-^- =CATEGORIES= -^-^-^-^- */
-
-/*.categories {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	padding: 16px 32px;
-}
-
-.categories a {
-	text-decoration: none;
-	max-width: 100%;		scaling images
-	height: auto;
-	padding: 16px;
-}
-
-.categories img {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-
-.categories p {
-	text-align: center;
-}
-
-.categories a:hover p {
-	color: #bfbfbf;
-}
-
-@media screen and (min-width: 600px) {
-	.categories a {
-		max-width: 50%;
-	}
-}
-
-@media screen and (min-width: 900px) {
-	.categories a {
-		max-width: calc(100% / 3);
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.categories a {
-		max-width: 25%;
-	}
-}*/
 
 .categories {
 	display: grid;
@@ -268,7 +217,6 @@ h3 {
 /* -^-^-^-^- =GALLERY MODAL= -^-^-^-^- */
 
 .modal {
-	/*visibility: hidden;*/
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -279,7 +227,9 @@ h3 {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-.modal * {
+.modal .close,
+.modal .prev-img,
+.modal .next-img {
 	color: #bfbfbf;
 }
 
@@ -310,13 +260,13 @@ h3 {
 	cursor: pointer;
 }
 
+.modal-container {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .modal-img {
-	/*display: none;*/
-	/*position: relative;*/
-	/*position: absolute;		for opacity transition
-	top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
 	opacity: 0;
   margin: auto;
   max-width: 100%;
@@ -326,34 +276,29 @@ h3 {
   will-change: auto;
 }
 
-.modal-container {
-	position: absolute;
-	max-width: 100%;
-	max-height: 100%;
-}
-
 .caption {
 	position: absolute;
 	bottom: 0;
-	/*background: #000000;
+	background: #000000;
 	background: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
-	transition: .3s ease-out;
-	opacity: 0;*/
+	transition: .2s ease-out;
+	opacity: 0;
 	width: 100%;
-	font-size: 1em;
-	text-align: center;
+	padding: 16px 24px;
+	font-size: 1.1em;
+	line-height: 180%;
+	/*text-align: center;*/
 }
 
-.modal-img:hover .caption {
+.modal-container:hover .caption {
 	opacity: 1;
 }
 
 .prev-img,
 .next-img {
 	position: absolute;
-	z-index: 2;
-	width: 50%;
+	width: 4%;
 	height: 100%;
 }
 
@@ -364,12 +309,13 @@ h3 {
 
 .prev-img div,
 .next-img div {
+	z-index: 2;
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	padding: 0 16px;
 	margin-top: -32px;
-	transition: 0.4s ease;
+	transition: 0.3s ease;
 	-webkit-transition: 0.4s ease;
 	font-size: 3rem;
 	user-select: none;
@@ -386,7 +332,8 @@ h3 {
 }
 
 .prev-img:hover .modal-img,
-.next-img:hover .modal-img {
+.next-img:hover .modal-img,
+.modal-container:hover .modal-img {
 	will-change: opacity;
 }
 
@@ -501,7 +448,21 @@ h3 {
 		padding: 32px 8px;
 	}
 
+	.prev-img div,
+	.next-img div {
+		padding: 0 8px;
+	}
+
 	/* -v-v-v-v- =MOBILE GALLERY= -v-v-v-v- */
+
+	/* -^-^-^-^- =MOBILE MODAL= -^-^-^-^- */
+
+	.caption {
+		padding: 10px 12px;
+		font-size: 1em;
+	}
+
+	/* -v-v-v-v- =MOBILE MODAL= -v-v-v-v- */
 
 }
 

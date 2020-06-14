@@ -54,9 +54,10 @@ function showModal(n) {
 	if (n > images.length) {modalIndex = 1;}
 	if (n < 1) {modalIndex = images.length;}
 
-	// Set the opacity for each image to 0
+	// Set each image's opacity to 0 and make them unclickable and unhoverable
 	for (i = 0; i < images.length; i++) {
 		images[i].style.opacity = "0";
+		imageContainer[i].style.pointerEvents = "none";
 	}
 
 	// Check that there are captions, and hide them
@@ -68,10 +69,25 @@ function showModal(n) {
 	
 	// Calculate the image's resized height and set the image container's height to it
 	imageContainer[modalIndex-1].style.height = parseInt(window.getComputedStyle(images[modalIndex-1]).height) + "px";
+	// Set the current image to be clickable and hoverable
+	imageContainer[modalIndex-1].style.pointerEvents = "auto";
 	// Set the current image's opacity to 1
 	images[modalIndex-1].style.opacity = 1;
 	// Check that there are captions, and display the current image's caption
 	if(captionText.length > 0) {captionText[modalIndex-1].style.display = "block";}
+}
+
+// Switches images when the image is clicked based on the mouse's position
+function clickImage(event) {
+	// Calculate the image's center based on the image's width
+	var imageCenter = this.innerWidth / 2;
+	// If the mouse clicked to the right of center, go to the next image
+	// If not, it clicked left, so go to the pervious image
+	if(event.pageX >= imageCenter) {
+		plusModal(1);
+	} else {
+		plusModal(-1);
+	}
 }
 
 // Function to set the image container height based on the image's size after responsive resizing

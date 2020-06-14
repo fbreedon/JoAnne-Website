@@ -70,14 +70,13 @@
         <!-- Image gallery in the modal -->
         <div class="modal-content">
           <!-- Modal gallery images -->
-          <!--div class="test" style="display: inline-block;"-->
           <!-- Php to read the image files and display them in the modal gallery -->
           <?php
           // Find all the image file paths in the directory and store them in an array,
           // then display each one properly in the modal gallery
           foreach (glob("../images/birds/brazil/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
           ?>
-          <div class="modal-container">
+          <div class="modal-container" onclick="clickImage(event)">
             <img class="modal-img" src="<?php echo $img_file; ?>" />
             <?php
             $file_name = pathinfo($img_file); //basename($img_file,".jpg");
@@ -99,8 +98,6 @@
           <?php
           }
           ?>
-
-        <!--/div-->
         </div>
       </div>
     </div>
