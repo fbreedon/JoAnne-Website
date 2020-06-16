@@ -76,7 +76,25 @@
           // then display each one properly in the modal gallery
           foreach (glob("../images/birds/alaska/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
           ?>
+          <div class="modal-container" onclick="clickImage(event)">
             <img class="modal-img" src="<?php echo $img_file; ?>" />
+            <?php
+            $file_name = pathinfo($img_file);
+            $info_file = "../images/birds/alaska/captions/" . $file_name['filename'] . ".txt";
+            $file_handle = fopen($info_file, "r");
+            ?>
+            <div class="caption">
+              <?php
+              // Read the file line by line and put them all in one div
+              while (!feof($file_handle)) {
+                echo $text = fgets($file_handle); ?> <br> <?php
+              } ?>
+            </div>
+            <?php
+            // Close the opened file
+            fclose($file_handle);
+            ?>
+            </div>
           <?php
           }
           ?>

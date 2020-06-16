@@ -79,7 +79,7 @@
           <div class="modal-container" onclick="clickImage(event)">
             <img class="modal-img" src="<?php echo $img_file; ?>" />
             <?php
-            $file_name = pathinfo($img_file); //basename($img_file,".jpg");
+            $file_name = pathinfo($img_file);
             $info_file = "../images/birds/brazil/captions/" . $file_name['filename'] . ".txt";
             $file_handle = fopen($info_file, "r");
             ?>
