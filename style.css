@@ -339,6 +339,20 @@ h3 {
 
 /* -v-v-v-v- =GALLERY MODAL= -v-v-v-v- */
 
+/* -^-^-^-^- =CONTACT= -^-^-^-^- */
+
+.contact {
+	text-align: center;
+}
+
+.contact a {
+	font-size: 1.8em;
+	color: #1a1a1a;
+	text-decoration: none;
+}
+
+/* -v-v-v-v- =CONTACT= -v-v-v-v- */
+
 /* -^-^-^-^- =ANIMATIONS= -^-^-^-^- */
 
 .fade-in {
