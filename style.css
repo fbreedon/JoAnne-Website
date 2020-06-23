@@ -346,9 +346,14 @@ h3 {
 }
 
 .contact a {
-	font-size: 1.8em;
+	font-size: 2em;
 	color: #1a1a1a;
 	text-decoration: none;
+	margin: 6px;
+}
+
+.contact a:hover {
+	color: #bfbfbf;
 }
 
 /* -v-v-v-v- =CONTACT= -v-v-v-v- */
