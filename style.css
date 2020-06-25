@@ -342,10 +342,12 @@ h3 {
 /* -^-^-^-^- =CONTACT= -^-^-^-^- */
 
 .contact {
-	text-align: center;
+	/*text-align: center;*/
+	padding: 0 300px;
 }
 
 .contact a {
+	float: left;
 	font-size: 2em;
 	color: #1a1a1a;
 	text-decoration: none;
@@ -354,6 +356,14 @@ h3 {
 
 .contact a:hover {
 	color: #bfbfbf;
+}
+
+.contact img {
+	display: inline-block;
+	float: right;
+	max-width: 50%;
+	max-height: 50%;
+	padding-top: 24px;
 }
 
 /* -v-v-v-v- =CONTACT= -v-v-v-v- */
