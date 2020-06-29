@@ -339,15 +339,40 @@ h3 {
 
 /* -v-v-v-v- =GALLERY MODAL= -v-v-v-v- */
 
+/* -^-^-^-^- =ABOUT= -^-^-^-^- */
+
+.about {
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+}
+
+.about p {
+	line-height: 1.5;
+}
+
+.about p:last-of-type {
+	padding-bottom: 24px;
+}
+
+.about img {
+	display: inline-block;
+	float: right;
+	max-width: 100%;
+	padding: 24px 0 24px 48px;
+}
+
+/* -v-v-v-v- =ABOUT= -v-v-v-v- */
+
 /* -^-^-^-^- =CONTACT= -^-^-^-^- */
 
 .contact {
-	/*text-align: center;*/
-	padding: 0 300px;
+	text-align: center;
+	/*padding: 0 300px;*/
 }
 
 .contact a {
-	float: left;
+	/*float: left;*/
 	font-size: 2em;
 	color: #1a1a1a;
 	text-decoration: none;
@@ -359,11 +384,11 @@ h3 {
 }
 
 .contact img {
-	display: inline-block;
-	float: right;
-	max-width: 50%;
-	max-height: 50%;
+	display: block;
+	width: 100%;
+	max-width: 900px;
 	padding-top: 24px;
+	margin: auto;
 }
 
 /* -v-v-v-v- =CONTACT= -v-v-v-v- */
@@ -492,6 +517,18 @@ h3 {
 	}
 
 	/* -v-v-v-v- =MOBILE MODAL= -v-v-v-v- */
+
+	/* -^-^-^-^- =MOBILE ABOUT= -^-^-^-^- */
+
+	.about img {
+		display: block;
+		float: none;
+		padding: 16px 0;
+		margin: auto;
+	}
+
+	/* -v-v-v-v- =MOBILE ABOUT= -v-v-v-v- */
+
 
 }
 
