@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <base href="http://localhost/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  	<meta name="description" content="">
-    <meta name="keywords" content="">
-		<!--link rel="icon" type="image/png" sizes="32x32" href="">
-		<link rel="manifest" href="./site.webmanifest">
-  	<meta property="og:image:url" content="">
-  	<meta property="og:image:width" content="">
-  	<meta property="og:image:height" content="">
-  	<meta property="og:type" content="website">
-  	<meta property="og:url" content="">
-  	<meta property="og:title" content="">
-  	<meta property="og:description" content=""-->
+    <meta name="description" content="JoAnne Fillatti's photography of birds in Brazil.">
+    <meta name="keywords" content="JoAnne Fillatti, photography, birds, Brazil">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!--link rel="manifest" href="./site.webmanifest">
+    <meta property="og:image:url" content="./images/Sparkling Violetear-1.jpg">
+    <meta property="og:image:width" content="2039">
+    <meta property="og:image:height" content="2039">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Birds of Brazil | Joanne Fillatti">
+    <meta property="og:description" content="JoAnne Fillatti's photography of birds in Brazil."-->
   	<title>Birds of Brazil | Joanne Fillatti</title>
   </head>
 
