@@ -5,21 +5,21 @@
   	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <base href="http://localhost/">
+    <base href="http://joannefillatti.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="JoAnne Fillatti's photography of birds in Alaska.">
     <meta name="keywords" content="JoAnne Fillatti, photography, birds, Alaska">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <!--link rel="manifest" href="./site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
     <meta property="og:image:url" content="./images/Sparkling Violetear-1.jpg">
     <meta property="og:image:width" content="2039">
     <meta property="og:image:height" content="2039">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="http://joannefillatti.com/">
     <meta property="og:title" content="Birds of Alaska | Joanne Fillatti">
-    <meta property="og:description" content="JoAnne Fillatti's photography of birds in Alaska."-->
+    <meta property="og:description" content="JoAnne Fillatti's photography of birds in Alaska.">
   	<title>Birds of Alaska | Joanne Fillatti</title>
   </head>
 
