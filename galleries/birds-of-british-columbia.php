@@ -56,7 +56,7 @@
         // then display each one properly in the gallery
         foreach (glob("../images/birds/british columbia/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
         ?>
-          <img class="gallery-img" src="<?php echo $img_file; ?>" onclick="openModal();currentModal(<?php echo $i; ?>)" />
+          <img class="gallery-img" src="<?php echo $img_file; ?>" alt="bird of british columbia image <?php echo $i; ?>" onclick="openModal();currentModal(<?php echo $i; ?>)" />
         <?php
           $i++;
         }
@@ -79,7 +79,7 @@
           foreach (glob("../images/birds/british columbia/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
           ?>
           <div class="modal-container" onclick="clickImage(event)">
-            <img class="modal-img" src="<?php echo $img_file; ?>" />
+            <img class="modal-img" src="<?php echo $img_file; ?>" alt="bird of british columbia modal image" />
             <?php
             $file_name = pathinfo($img_file);
             $info_file = "../images/birds/british columbia/captions/" . $file_name['filename'] . ".txt";

@@ -344,6 +344,7 @@ h3 {
 .about {
 	width: 100%;
 	max-width: 1080px;
+	min-height: 800px;
 	margin: auto;
 }
 

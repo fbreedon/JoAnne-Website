@@ -53,7 +53,7 @@
         // then display each one properly in the slideshow
         foreach (glob("images/slideshow/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
         ?>
-          <img class="slide-img" src="<?php echo $img_file; ?>" />
+          <img class="slide-img" src="<?php echo $img_file; ?>" alt="slideshow image" />
         <?php
         }
         ?>
