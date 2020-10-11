@@ -361,6 +361,7 @@ h3 {
 	float: right;
 	max-width: 100%;
 	padding: 24px 0 24px 48px;
+	image-orientation: from-image;
 }
 
 /* -v-v-v-v- =ABOUT= -v-v-v-v- */
