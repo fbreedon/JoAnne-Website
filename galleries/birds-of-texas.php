@@ -5,7 +5,7 @@
   	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <base href="http://joannefillatti.com/">
+    <base href="https://joannefillatti.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="JoAnne Fillatti's photography of birds in Texas.">
     <meta name="keywords" content="JoAnne Fillatti, photography, birds, Texas">

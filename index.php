@@ -5,7 +5,7 @@
   	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <base href="http://joannefillatti.com/">
+    <base href="https://joannefillatti.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   	<meta name="description" content="JoAnne Fillatti is a photographer from Davis, California who specializes in birds and other natural themes.">
     <meta name="keywords" content="JoAnne Fillatti, photography, nature, Davis">
@@ -19,7 +19,7 @@
   	<meta property="og:image:width" content="2039">
   	<meta property="og:image:height" content="2039">
   	<meta property="og:type" content="website">
-  	<meta property="og:url" content="http://joannefillatti.com/">
+  	<meta property="og:url" content="https://joannefillatti.com/">
   	<meta property="og:title" content="Home | Joanne Fillatti">
   	<meta property="og:description" content="JoAnne Fillatti is a photographer from Davis, California who specializes in birds and other natural themes.">
   	<title>Home | Joanne Fillatti</title>
@@ -34,7 +34,7 @@
       <!-- Header navigation container -->
       <nav class="navigation" id="navigation-id">
         <!-- Header title -->
-        <div><a href="./" class="title">JoAnne Fillatti Photography</a></div>
+        <div><a href="https://joannefillatti.com/" class="title">JoAnne Fillatti Photography</a></div>
         <!-- Responsive icon for mobile -->
         <a href="javascript:void(0);" class="nav-icon" onclick="clickIcon()">&#9776</a>
         <!-- Navigation links -->
