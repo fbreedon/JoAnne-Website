@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta property="og:image:url" content="./images/Sparkling Violetear-1.jpg">
+    <meta property="og:image:url" content="./images/birds/british columbia/01-Common Loon-6.jpg">
     <meta property="og:image:width" content="2039">
     <meta property="og:image:height" content="2039">
     <meta property="og:type" content="website">
