@@ -42,6 +42,15 @@
       </nav>
     </header>
 
+    <!-- Call the mobile navigation icon script -->
+    <script src="scripts/navigation icon script.js"></script>
+
+    <!-- Call the modal gallery script -->
+    <script src="./scripts/modal script.js"></script>
+
+    <!-- Footer for copyright and social media info -->
+    <footer class="footer">&copy JoAnne Fillatti</footer>
+
     <!-- Content container for centering -->
     <div class="content">
       <!-- Gallery title -->
@@ -104,14 +113,7 @@
       </div>
     </div>
 
-    <!-- Call the mobile navigation icon script -->
-    <script src="scripts/navigation icon script.js"></script>
 
-    <!-- Call the modal gallery script -->
-    <script src="./scripts/modal script.js"></script>
-
-    <!-- Footer for copyright and social media info -->
-    <footer class="footer">&copy JoAnne Fillatti</footer>
 
     </div>
     
