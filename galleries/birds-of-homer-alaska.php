@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <base href="https://joannefillatti.com/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="JoAnne Fillatti's photography of birds in the Galapagos.">
-    <meta name="keywords" content="JoAnne Fillatti, photography, birds, Galapagos">
+    <meta name="description" content="JoAnne Fillatti's photography of birds in Homer, Alaska.">
+    <meta name="keywords" content="JoAnne Fillatti, photography, birds, Homer, Alaska">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta property="og:image:url" content="./images/birds/galapagos/01-Galapagos Penguin.jpg">
+    <meta property="og:image:url" content="./images/birds/homer alaska/01-Bald Eagle.jpg">
     <meta property="og:image:width" content="2039">
     <meta property="og:image:height" content="2039">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://joannefillatti.com/">
-    <meta property="og:title" content="Birds of the Galapagos | Joanne Fillatti">
-    <meta property="og:description" content="JoAnne Fillatti's photography of birds in the Galapagos.">
-  	<title>Birds of the Galapagos | Joanne Fillatti</title>
+    <meta property="og:title" content="Birds of  Homer, Alaska | Joanne Fillatti">
+    <meta property="og:description" content="JoAnne Fillatti's photography of birds in  Homer, Alaska.">
+  	<title>Birds of Homer, Alaska | Joanne Fillatti</title>
   </head>
 
   <body>
@@ -45,7 +45,7 @@
     <!-- Content container for centering -->
     <div class="content">
       <!-- Gallery title -->
-      <h3>Birds of the Galapagos</h3>
+      <h3>Birds of Homer, Alaska</h3>
       <!-- Image gallery container grid -->
       <div class="gallery">
         <!-- Gallery images -->
@@ -54,9 +54,9 @@
         $i = 1;
         // Find all the image file paths in the directory and store them in an array,
         // then display each one properly in the gallery
-        foreach (glob("../images/birds/galapagos/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
+        foreach (glob("../images/birds/homer alaska/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
         ?>
-          <img class="gallery-img" src="<?php echo $img_file; ?>" alt="bird of galapagos image <?php echo $i; ?>" onclick="openModal();currentModal(<?php echo $i; ?>)" />
+          <img class="gallery-img" src="<?php echo $img_file; ?>" alt="bird of homer alaska image <?php echo $i; ?>" onclick="openModal();currentModal(<?php echo $i; ?>)" />
         <?php
           $i++;
         }
@@ -76,13 +76,13 @@
           <?php
           // Find all the image file paths in the directory and store them in an array,
           // then display each one properly in the modal gallery
-          foreach (glob("../images/birds/galapagos/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
+          foreach (glob("../images/birds/homer alaska/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
           ?>
           <div class="modal-container" onclick="clickImage(event)">
-            <img class="modal-img" src="<?php echo $img_file; ?>" alt="bird of galapagos modal image" />
+            <img class="modal-img" src="<?php echo $img_file; ?>" alt="bird of Homer, Alaska modal image" />
             <?php
             $file_name = pathinfo($img_file);
-            $info_file = "../images/birds/galapagos/captions/" . $file_name['filename'] . ".txt";
+            $info_file = "../images/birds/homer alaska/captions/" . $file_name['filename'] . ".txt";
             $file_handle = fopen($info_file, "r");
             ?>
             <div class="caption">
