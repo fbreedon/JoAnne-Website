@@ -13,14 +13,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta property="og:image:url" content="./images/birds/colombia/01-Scarlet-bellied Mountain Tanager.jpg">
+    <meta property="og:image:url" content="./images/birds/colombia-2024/01-Black-billed Mountain Toucan.jpg">
     <meta property="og:image:width" content="2039">
     <meta property="og:image:height" content="2039">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://joannefillatti.com/">
-    <meta property="og:title" content="Birds of Colombia 2020 | Joanne Fillatti">
+    <meta property="og:title" content="Birds of Colombia 2024 | Joanne Fillatti">
     <meta property="og:description" content="JoAnne Fillatti's photography of birds in Colombia.">
-  	<title>Birds of Colombia 2020 | Joanne Fillatti</title>
+  	<title>Birds of Colombia 2024 | Joanne Fillatti</title>
   </head>
 
   <body>
@@ -47,8 +47,8 @@
       <!-- Gallery title -->
       <h3>Birds of Colombia</h3>
       <div class="gallery-tabs">
-        <a href="./galleries/birds-of-colombia.php" class="active">2020</a>
-        <a href="./galleries/birds-of-colombia-2024.php">2024</a>
+        <a href="./galleries/birds-of-colombia.php">2020</a>
+        <a href="./galleries/birds-of-colombia-2024.php" class="active">2024</a>
       </div>
       <!-- Image gallery container grid -->
       <div class="gallery">
@@ -58,7 +58,7 @@
         $i = 1;
         // Find all the image file paths in the directory and store them in an array,
         // then display each one properly in the gallery
-        foreach (glob("../images/birds/colombia/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
+        foreach (glob("../images/birds/colombia-2024/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
         ?>
           <img class="gallery-img" src="<?php echo $img_file; ?>" alt="bird of colombia image <?php echo $i; ?>" onclick="openModal();currentModal(<?php echo $i; ?>)" />
         <?php
@@ -80,13 +80,13 @@
           <?php
           // Find all the image file paths in the directory and store them in an array,
           // then display each one properly in the modal gallery
-          foreach (glob("../images/birds/colombia/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
+          foreach (glob("../images/birds/colombia-2024/*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE) as $img_file) {
           ?>
           <div class="modal-container" onclick="clickImage(event)">
             <img class="modal-img" src="<?php echo $img_file; ?>" alt="bird of colombia modal image" />
             <?php
             $file_name = pathinfo($img_file);
-            $info_file = "../images/birds/colombia/captions/" . $file_name['filename'] . ".txt";
+            $info_file = "../images/birds/colombia-2024/captions/" . $file_name['filename'] . ".txt";
             $file_handle = fopen($info_file, "r");
             ?>
             <div class="caption">

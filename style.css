@@ -5,6 +5,7 @@
 		. =SLIDESHOW=
 		. =CATEGORIES=
 		. =GALLERY=
+		. =GALLERY TABS=
 		. =GALLERY MODAL=
 		. =ANIMATIONS=
 		. =MOBILE=
@@ -213,6 +214,36 @@ h3 {
 }
 
 /* -v-v-v-v- =GALLERY= -v-v-v-v- */
+
+/* -^-^-^-^- =GALLERY TABS= -^-^-^-^- */
+
+.gallery-tabs {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 15%));
+	/*grid-auto-flow: column;*/
+	justify-content: center;
+	align-content: center;
+	gap: 16px;
+	padding-top: 16px;
+}
+
+.gallery-tabs a {
+	color: #1a1a1a;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	font-size: 1.3em;
+}
+
+.gallery-tabs a.active {
+	color: #999999;
+}
+
+.gallery-tabs a:hover:not(.active) {
+	color: #bfbfbf;
+}
+
+/* -v-v-v-v- =GALLERY TABS= -v-v-v-v- */
 
 /* -^-^-^-^- =GALLERY MODAL= -^-^-^-^- */
 
