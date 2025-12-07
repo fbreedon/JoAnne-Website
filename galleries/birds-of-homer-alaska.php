@@ -18,7 +18,7 @@
     <meta property="og:image:height" content="2039">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://joannefillatti.com/">
-    <meta property="og:title" content="Birds of  Homer, Alaska | Joanne Fillatti">
+    <meta property="og:title" content="Birds of Homer, Alaska | Joanne Fillatti">
     <meta property="og:description" content="JoAnne Fillatti's photography of birds in  Homer, Alaska.">
   	<title>Birds of Homer, Alaska | Joanne Fillatti</title>
   </head>
